@@ -20,7 +20,7 @@ jobs: # Jobs run in parallel by default
 
     # Setting environment variables to be used in the workflow
     env: 
-      RESOURCE_GROUP: 'RG-ActionsDemo2025'
+      RESOURCE_GROUP: 'rg-github-demo''
       DEPLOYMENT_NAME: 'ActionsDemo2025'
 
     steps: # List of steps to run in the job sequentially
@@ -45,7 +45,7 @@ jobs: # Jobs run in parallel by default
         subscription-id: ${{ secrets.AZURE_SUB_ID }}
         resource-group-name: ${{ env.RESOURCE_GROUP }}
         template-file: './Bicep/storageAccount.bicep'
-        parameters: '{"parStorageAccountName": "ghadmostorage2025", 
+        parameters: '{"parStorageAccountName": "fkr_githubact", 
                       "parStorageSKU": "Standard_LRS"}'
     
     - name: Show outputs and Link
