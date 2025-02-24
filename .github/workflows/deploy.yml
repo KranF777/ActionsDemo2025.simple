@@ -20,7 +20,7 @@ jobs: # Jobs run in parallel by default
 
     # Setting environment variables to be used in the workflow
     env: 
-      RESOURCE_GROUP: 'rg-github-demo''
+      RESOURCE_GROUP: 'rg-github-demo'
       DEPLOYMENT_NAME: 'ActionsDemo2025'
 
     steps: # List of steps to run in the job sequentially
