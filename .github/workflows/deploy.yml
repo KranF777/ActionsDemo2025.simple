@@ -45,7 +45,7 @@ jobs: # Jobs run in parallel by default
         subscription-id: ${{ secrets.AZURE_SUB_ID }}
         resource-group-name: ${{ env.RESOURCE_GROUP }}
         template-file: './Bicep/storageAccount.bicep'
-        parameters: '{"parStorageAccountName": "fkr_githubact", 
+        parameters: '{"parStorageAccountName": "fkrgithubactdemo", 
                       "parStorageSKU": "Standard_LRS"}'
     
     - name: Show outputs and Link
